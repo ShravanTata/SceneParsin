@@ -42,11 +42,11 @@ for req in $(cat requirements.txt); do pip install $req --proxy $https_proxy; do
 
 cp Makefile.config.example Makefile.config
 
-# Adjust Makefile.config for using CPU – not CUDA
+-> Adjust Makefile.config for using CPU – not CUDA
 
-# INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
+  -> INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
 
-# LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib
+  -> LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib
 
 15. make
 
